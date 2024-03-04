@@ -1,0 +1,29 @@
+
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+num3 = float(input("Digite o terceiro número: "))
+
+
+maior_numero = max(num1, num2, num3)
+
+
+menor_numero = min(num1, num2, num3)
+
+
+iguais = []
+if num1 == num2 or num1 == num3:
+    iguais.append(num1)
+if num2 == num3:
+    iguais.append(num2)
+
+
+if iguais:
+    print(f"Existem números iguais: {', '.join(map(str, iguais))}")
+else:
+    print("Não existem números iguais.")
+
+
+print(f"O maior número é: {maior_numero}")
+
+
+print(f"O menor número é: {menor_numero}")
